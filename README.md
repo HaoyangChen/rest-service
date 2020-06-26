@@ -20,3 +20,17 @@
 
 ### 3: Docker
 Docker is a set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers. It is a Linux container management toolkit with a "social" aspect, allowing users to publish container images and consume those published by others. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+
+
+## Task 2: Init/build a simple microservice application using Spring Boot framework
+To view the RESTful Web Service, you can run this command 
+`./mvnw spring-boot:run` to run the application and visit `http://localhost:8080/greeting` or `http://localhost:8080/greeting?name=User`
+
+## Task 3: Running your service in Docker
+Prerequisites: Downloaded and installed the VirtualBox and Docker
+
+Step 1: Created Dockerfile at the Root directory with command `touch Dockerfile` and fill in the portal configuration
+
+Step 2: Built a jar package of the project using the Maven package build in IntelliJ IDEA
+
+Step 3: Containerize the project by building an image and tagging it as springio/rest-service
