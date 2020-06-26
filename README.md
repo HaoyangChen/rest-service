@@ -26,8 +26,19 @@ Docker is a set of platform as a service products that uses OS-level virtualizat
 To view the RESTful Web Service, you can run this command 
 `./mvnw spring-boot:run` to run the application and visit `http://localhost:8080/greeting` or `http://localhost:8080/greeting?name=User`
 
-## Task 3: Running your service in Docker
+## Task 3: Running the service in Docker
+Reference: 
+
+[Official Document](https://spring.io/guides/gs/spring-boot-docker/)
+
+[Tutorial](https://www.cnblogs.com/cloudfloating/p/10851315.html)
+
+[Video](https://www.youtube.com/watch?v=FlSup_eelYE)
+
+[Build jar package](https://blog.csdn.net/yuanting_/article/details/90207328)
+
 Prerequisites: Downloaded and installed the VirtualBox and Docker
+[Configure Docker for Windows 10 Home](https://juejin.im/post/5e158594f265da5d0c5428dc)
 
 Step 1: Created Dockerfile at the Root directory with command `touch Dockerfile` and fill in the portal configuration
 
@@ -36,5 +47,10 @@ Step 2: Built a jar package of the project using the Maven package build in Inte
 Step 3: Containerize the project by building an image and tagging it as springio/rest-service using the command `docker build -t springio/rest-service .`
 You can use the command `docker images` to check the images and use the command `java -jar target/rest-service-0.0.1-SNAPSHOT.jar` to run the RESTful web service.
 
-Step 4: Finally, run the command `docker run -p 8080:8080 springio/rest-service` to actually run the image you just built. Visit `http://localhost:8080/greeting`
+Step 4: Finally, run the command `docker run -p 8080:8080 springio/rest-service` to actually run the image you just built and check the status using `docker ps`. Visit `http://localhost:8080/greeting` to view the actual web service.
+
+## Task 4: Set up Swagger2 for the service
+Reference: https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+
+
 
