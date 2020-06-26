@@ -33,4 +33,8 @@ Step 1: Created Dockerfile at the Root directory with command `touch Dockerfile`
 
 Step 2: Built a jar package of the project using the Maven package build in IntelliJ IDEA
 
-Step 3: Containerize the project by building an image and tagging it as springio/rest-service
+Step 3: Containerize the project by building an image and tagging it as springio/rest-service using the command `docker build -t springio/rest-service .`
+You can use the command `docker images` to check the images and use the command `java -jar target/rest-service-0.0.1-SNAPSHOT.jar` to run the RESTful web service.
+
+Step 4: Finally, run the command `docker run -p 8080:8080 springio/rest-service` to actually run the image you just built. Visit `http://localhost:8080/greeting`
+
