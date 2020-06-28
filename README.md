@@ -56,7 +56,7 @@ Reference: https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
 
 Setup and be able to query your service API from the Swagger UI
 
-# Task 5: Set up DB
+## Task 5: Set up DB
 - Setup local MySQL
 - List the difference between DB persistent frameworks. Eg: Mybatis, JDBC, Hibernate
 - Connect your service to be able query DB using Mybatis.
