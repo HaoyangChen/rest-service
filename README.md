@@ -52,9 +52,13 @@ Reference:
 [Build jar package](https://blog.csdn.net/yuanting_/article/details/90207328)
 
 ## Task 4: Set up Swagger2 for the service
-Reference: https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+Setup and be able to query the service API from the Swagger UI.
+Setup is describe in the SwaggerConfig File. You can visit http://localhost:8080/swagger-ui.html to check if the service is up.
 
-Setup and be able to query your service API from the Swagger UI
+Reference: 
+[Swagger2 Documentation](https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
+
+[Basic Setup for Swagger2](https://www.javainuse.com/spring/boot_swagger)
 
 ## Task 5: Set up DB
 - Setup local MySQL
